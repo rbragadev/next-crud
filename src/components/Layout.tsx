@@ -1,3 +1,4 @@
+import Cliente from '@/core/Cliente';
 import Titulo from './Titulo';
 
 interface LayoutProps {
