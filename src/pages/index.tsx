@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import Layout from '@/components/Layout';
 import Tabela from '@/components/Tabela';
 import Cliente from '@/core/Cliente';
+import Botao from '@/components/Botao';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -32,6 +33,12 @@ export default function Home() {
    `}
     >
       <Layout titulo="Cadastro Simples">
+        <div className="flex justify-end">
+          <Botao cor="green" className="mb-4">
+            Novo Cliente
+          </Botao>
+        </div>
+
         <Tabela
           clientes={clientes}
           clienteSelecionado={clienteSelecionado}
